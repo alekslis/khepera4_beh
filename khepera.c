@@ -3,7 +3,7 @@ int max_us=0;
 int maxi;
 for(i=0;i<5;i++)
 {
-  usvalues=
+  usvalues[i]=Buffer(i);
 
   if (usvalues[i]>max_us)
   {

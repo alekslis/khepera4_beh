@@ -51,4 +51,9 @@ else if(usvalues[4]&& usvalues[4]<1000)
   kh4_set_position(poz_l+10000,poz_r-10000,dsPic);
   odometry_goto(result_x,result_y+0.1);
 }
-kh4_set_speed(r_speed_left,r_speed_right,dsPic);
+while(atgoal==0)
+{
+  odometria();
+  odometry_goto();
+  kh4_set_speed(r_speed_left,r_speed_right,dsPic);
+}

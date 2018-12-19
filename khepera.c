@@ -1,6 +1,7 @@
 if czujniki us > np.30/50 odo_goto(x, y (czyli np.30,0))
 int max_us=0;
 int maxi;
+//POZA PĘTLĄ
 for(i=0;i<5;i++)
 {
   usvalues[i]=Buffer(i);

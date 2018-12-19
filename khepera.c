@@ -34,20 +34,20 @@ else if(maxi==4){
 }
 
 float gotox,gotoy;
-if (usvalues[2]>30)
+if (usvalues[2]>30 && usvalues[2]<1000)
 {
-  gotox=result_x+0.2;
+  gotox=result_x+0.1;
   gotoy=result_y;
   odometry_goto(gotox,gotoy);
 }
-else if(usvalues[0]>30)
+else if(usvalues[0]>30 && usvalues[0]<1000)
 {
   kh4_set_position(poz_l-10000,poz_r+10000,dsPic);
-  odometry_goto(result_x,result_y-0.2);
+  odometry_goto(result_x,result_y-0.1);
 }
-else if(usvalues[4])
+else if(usvalues[4]&& usvalues[4]<1000)
 {
   kh4_set_position(poz_l+10000,poz_r-10000,dsPic);
-  odometry_goto(result_x,result_y+0.2);
+  odometry_goto(result_x,result_y+0.1);
 }
 kh4_set_speed(r_speed_left,r_speed_right,dsPic);

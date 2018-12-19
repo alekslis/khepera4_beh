@@ -43,14 +43,15 @@ if (usvalues[2]>30 && usvalues[2]<1000)
 }
 else if(usvalues[0]>30 && usvalues[0]<1000)
 {
-  kh4_set_position(poz_l-10000,poz_r+10000,dsPic);
+  //kh4_set_position(poz_l-10000,poz_r+10000,dsPic);
   odometry_goto(result_x,result_y-0.1);
 }
 else if(usvalues[4]&& usvalues[4]<1000)
 {
-  kh4_set_position(poz_l+10000,poz_r-10000,dsPic);
+  //kh4_set_position(poz_l+10000,poz_r-10000,dsPic);
   odometry_goto(result_x,result_y+0.1);
 }
+//dopóki nie dojedzie do punktu
 while(atgoal==0)
 {
   odometria();
